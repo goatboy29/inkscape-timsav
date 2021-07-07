@@ -93,6 +93,11 @@ class PolyLine(Entity):
 
 	def __str__(self):
 		return "Polyline consisting of %d segments." % len(self.segments)
+	def get_pts(self):
+		pts = [];
+				
+		return pts;
+			
 
 	def get_gcode(self, context):
 		"""Emit gcode for drawing polyline"""
